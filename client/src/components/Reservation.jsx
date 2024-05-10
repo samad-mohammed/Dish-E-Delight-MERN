@@ -12,7 +12,7 @@ const Reservation = () => {
   const [date, setDate] = useState("");
   const [email, setEmail] = useState("");
   const [time, setTime] = useState("");
-  const [phone, setPhone] = useState("+91");
+  const [phone, setPhone] = useState();
   const navigate = useNavigate();
 
   const handleReservation = async (e) => {
