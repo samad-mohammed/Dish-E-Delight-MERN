@@ -17,7 +17,7 @@ app.use(
   })
 );
 app.get('/', (req, res) => {
-  res.send('Hello, World!');
+  res.send('Welcome to Dish-E-Delights backend. Wish you a good day!!');
 });
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
