@@ -16,19 +16,12 @@ app.use(
     credentials: true,
   })
 );
-
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Define CORS options
-// const corsOptions = {
-//   origin: process.env.FRONTEND_URL, // Allow requests from the specified origin
-//   methods: ["POST"], // Allow only POST requests
-//   credentials: true, // Allow credentials (cookies, authorization headers, etc.)
-// };
-
-// // Enable CORS with the defined options
-// app.use(cors(corsOptions));
 
 app.use('/api/reservation', reservationRouter)
 
