@@ -12,14 +12,14 @@ const Reservation = () => {
   const [date, setDate] = useState("");
   const [email, setEmail] = useState("");
   const [time, setTime] = useState("");
-  const [phone, setPhone] = useState("+91");
+  const [phone, setPhone] = useState();
   const navigate = useNavigate();
 
   const handleReservation = async (e) => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/reservation/send",
+        "https://dish-e-delight-mern.onrender.com/api/reservation/send",
         { firstName, lastName, email, phone, date, time },
         {
           headers:{

@@ -24,7 +24,8 @@ const Sucess = () => {
     <section className='notFound' >
         <div className="container">
           <img src="/sandwich.png" alt="success" />
-          <h1>Redirecting to Home in {countDown} seconds...</h1>
+          <h1 style={{marginBottom:'15px'}}>Successfully Reserved a table at Dish-E-Delight</h1>
+          <h3 style={{marginBottom:'12px'}}>Redirecting to Home in {countDown} seconds...</h3>
           <Link to={'/'}>Back to Home <HiOutlineArrowNarrowRight/> </Link>
         </div>
     </section>

@@ -30,6 +30,11 @@ app.use(express.urlencoded({ extended: true }));
 // // Enable CORS with the defined options
 // app.use(cors(corsOptions));
 
+
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
 app.use('/api/reservation', reservationRouter)
 
 dbConnection();
