@@ -18,6 +18,9 @@ The Dish-E-Delight website is deployed and accessible at [https://dish-e-delight
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 
+## Website
+
+![dish-e-delight](https://github.com/samad-mohammed/Dish-e-Delight-MERN/assets/129748059/391222b5-ca95-4bf9-bbec-9475aaca3777)
 
 
 ## Contributing
